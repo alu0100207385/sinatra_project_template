@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 gem 'sinatra'
+gem 'sinatra-base'
 gem 'sinatra-flash'
 
 group :development do

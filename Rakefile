@@ -1,8 +1,13 @@
 task :default => :sinatra
 
-desc "Run the server via Sinatra"
+desc "Run the server via Sinatra (1)"
 task :sinatra do
-	sh "ruby app.rb"
+	sh "ruby app/controllers/app.rb"
+end
+
+desc "Run the server via Sinatra (2)"
+task :s do
+	sh "ruby app/controllers/app.rb"
 end
 
 desc "Run the server via rackup"
@@ -12,10 +17,10 @@ end
 
 desc "Run tests"
 task :tests do
-	sh "ruby test/test.rb"
+	sh "ruby tests/test.rb"
 end
 
 desc "Run rspec tests"
 task :spec do
-	sh "rspec -I. spec/app_spec.rb"
+	sh "rspec -I. tests/spec/app_spec.rb"
 end
