@@ -1,11 +1,11 @@
 task :default => :sinatra
 
-desc "Run the server via Sinatra (1)"
+desc "Run the server via Sinatra"
 task :sinatra do
 	sh "ruby app/controllers/app.rb"
 end
 
-desc "Run the server via Sinatra (2)"
+desc "Run the server via Sinatra"
 task :s do
 	sh "ruby app/controllers/app.rb"
 end
