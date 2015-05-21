@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-require 'sinatra'
+require 'rubygems'
 require 'sinatra/base'
 require 'sinatra/flash'
 
